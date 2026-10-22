@@ -1,0 +1,48 @@
+.page {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  gap: 10px;
+}
+
+header {
+  grid-area: header;
+  background: purple;
+  color: white;
+  padding: 20px;
+  font-size: x-large;
+  text-align: center;
+  text-decoration: underline;
+}
+
+aside {
+  grid-area: sidebar;
+  background: #ddd6fe;
+  padding: 100px;
+  text-align: center;
+  font-size: xx-large;
+  text-decoration: underline;
+ 
+}
+
+main {
+  grid-area: main;
+  background: #dbeafe;
+  padding: 100px;
+  text-align: center;
+  text-decoration: underline;
+  font-size: xx-large;
+}
+
+footer {
+  grid-area: footer;
+  background: #374151;
+  color: white;
+  padding: 20px;
+   text-align: center;
+  text-decoration: underline;
+  font-size:  x-large;
+}
